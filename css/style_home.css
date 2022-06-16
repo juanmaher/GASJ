@@ -1,0 +1,382 @@
+.nombre{
+	text-align: center;	
+}
+
+.nombre .titulos{
+	padding: 70px;
+	margin-top: 40px;
+}
+
+.nombre .titulos .siglas{
+	font-size: 75px;
+}
+
+.nombre .titulos .completo{
+	font-size: 30px;
+}
+
+.nombre .titulos .frase{
+	font-size: 25px;
+}
+
+.contenedor{
+	width:80%;
+	padding: 25px;
+	background-color: rgba(255,255,255,0.9);
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 5px;
+}
+
+.pregunta{
+	display: none;
+}
+
+#respuesta{
+	/* with video */
+	/* width: 47%; */
+	width: 100%;
+	padding: 20px;
+	display: inline-block;
+}
+
+#respuesta p{
+	line-height: 27px;
+	font-size: 19.5px;
+}
+
+.video_escritorio{
+	width: 50%;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-block;
+	float: right;
+}
+
+.video_escritorio iframe{
+	width: 100%;
+	height: 325px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.video_celular{
+	display: none;
+}
+
+hr {
+	width: 100%;
+	margin-top: 45px;
+}
+
+.barra_video{
+	display: none;
+}
+
+h2 {
+	padding: 20px;
+	margin-bottom: 5px;
+}
+
+.cuadroOpciones{
+	width: 50%;
+	display: inline-flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.opciones{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.opciones .boton{
+	width: 100%;
+	padding: 8px 25px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.1em;
+	border: none;
+	text-decoration:none;
+	text-align: left;
+	background: #E2E2E2;
+}
+
+.opciones .boton:hover{
+    background: #C2C2C2;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.cuadroTexto{
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+
+.cuadroTexto #noticias{
+	width: 80%;
+	height: 225px;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 8px 10px;
+	line-height: 27px;
+	font-size: 19.5px;
+}
+
+h3 {
+	margin-bottom: 15px;
+}
+
+.travesias{
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+.travesias .boton{
+	width: 100%;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+	border: none;
+	text-decoration:none;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.travesias .boton:hover{
+	height: 150px;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
+.travesias .boton .foto_lopez{
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	object-position: 100% 80%;
+}
+
+.travesias .boton h2{
+	margin-top:-115px;
+	margin-bottom: 60px;
+	color: white;
+}
+
+div #lopez{
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+}
+
+.travesias .boton .foto_jakob{
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	object-position: 100% 60%;
+}
+
+div #jakob{
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+}
+
+
+.travesias p{
+	text-align: justify;
+	line-height: 27px;
+	font-size: 19.5px;
+	margin-bottom: 20px;
+}
+
+.mapa{
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 1000px){
+	
+	body{
+		background: no-repeat fixed center center;
+		background-size: cover;
+	}
+	.contenedor{
+		width: 90%;
+	}
+
+	.pregunta{	
+		display: block;
+	}
+
+	.pregunta .boton{
+		width: 100%;
+		text-decoration: none;
+		border: none;
+		color: #3F3844;
+	}
+
+	#respuesta{
+		width: 100%;
+		padding: 0;
+		text-align: left;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+	}
+
+	#respuesta p{
+		padding: 25px;
+	}
+
+	.barra_celular{
+		margin-top: 0;
+	}
+
+	.video_escritorio{
+		display: none;
+	}
+
+	.video_celular{
+		width: 100%;
+		padding: 20px;
+		display: inline-block;
+	}
+
+	.video_celular iframe{
+		width: 100%;
+		height: 325px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+
+	.cuadroTexto #noticias{
+		width: 80%;
+		font-size: 18px;
+	}
+
+	.barra_video{
+		width: 100%;
+		margin-top: 45px;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	.contenedor{
+		width:95%;
+		padding: 0;
+		padding-bottom: 25px;
+	}
+
+	.nombre{
+		margin-top: 80px;
+		margin-bottom: 25px;
+	}
+
+	.nombre .titulos{
+		padding: 30px;
+	}
+
+	.nombre .titulos .siglas{
+		font-size: 75px;
+	}
+
+	.nombre .titulos .completo{
+		font-size: 25px;
+	}
+
+	.nombre .titulos .frase{
+		font-size: 20px;
+	}
+
+	#respuesta p{
+		padding: 25px;
+		line-height: 27px;
+		font-size: 15px;
+	}
+
+	h2{
+		font-size: 22px;
+	}
+
+	hr{
+		margin-top: 0px;
+	}
+
+	.video_celular{
+		width: 100%;
+		padding: 0;
+		padding-top: 20px;
+	}
+
+	.video_celular iframe{
+		width: 100%;
+		height: 250px;
+	}	
+
+	.cuadroOpciones{
+		width: 100%;
+		overflow:auto;
+	}
+
+	.opciones .boton{
+		width: 100%;
+		padding: 8px 25px;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+
+	.cuadroTexto{
+		width: 100%;
+		padding: 10px;
+		padding-top: 0;
+		padding-bottom: 20px;
+		float: right;
+		text-align: center;
+
+	}
+
+	.cuadroTexto #noticias{
+		width: 100%;
+		height: 0;
+		display: inline-block;
+	}
+
+	.travesias{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+	.travesias .boton h2{
+		margin-top:-112.5px;
+		margin-bottom: 60px;
+		color: white;
+		font-size: 19px;
+	}
+
+	.travesias p{
+		text-align: justify;
+		line-height: 27px;
+		font-size: 15px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+}

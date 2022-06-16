@@ -1,0 +1,84 @@
+header{
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header p{
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.nameDesktop{
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.nameMobile{
+    display: none;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    padding: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.editionNumber{
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    text-align: center;
+    bottom:0;
+    position: flex;
+}
+
+.editionNumber hr{
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    width: 20%;
+}
+
+.cuenta{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 500px){
+    .nombre{
+        font-size: 50px;
+        padding: 5px;
+    }
+    
+    .nameDesktop{
+        display: none;
+    }
+
+    .nameMobile{
+        display:block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .editionNumber{
+        padding: 50px;
+    }
+}
+
+#demo-svg path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 0;
+}

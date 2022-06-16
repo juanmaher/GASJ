@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="imagenes/gasj_favicon.ico">
+		<title>GASJ</title>
+		<link rel="stylesheet" type="text/css" href="css/style_cronograma.css">
+		<link rel="stylesheet" type="text/css" href="css/style_menu.css">
+		<link rel="stylesheet" type="text/css" href="css/icon-menu.css">		
+		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163103728-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-163103728-1');
+        </script>
+		
+	</head>
+
+	<body style="background-image: url('images/fondo_convivencias.jpg');background-position: center center;background-size: cover;background-repeat: no-repeat;background-attachment: fixed;height: 100%;font-family: Arial;">
+		<header>
+			<input type="checkbox" id="btn-menu">
+			<img src="images/logo_gasj.png">
+			<label for="btn-menu" class="icon-menu"></label>
+			
+			<nav class="menu">
+				<ul>
+					<li><a href="http://gasj.com.ar/home.html"><strong>Inicio</strong></a></li>
+					<li><a href="http://gasj.com.ar/cronograma.html"><strong>Cronograma</strong></a></li>
+					<li class="submenu"><a href="#"><strong>Equipo para acampar</strong><span class="icon-down-open"></span></a>
+						<ul>
+							<li><a href="http://gasj.com.ar/equipo1.html">Ropa</a></li>
+							<li><a href="http://gasj.com.ar/equipo2.html">Dormir</a></li>
+							<li><a href="http://gasj.com.ar/equipo3.html">Comer e higiene</a></li>
+							<li><a href="http://gasj.com.ar/equipo4.html">Equipaje y varios</a></li>
+						</ul>
+					</li>			
+					<li><a href="http://gasj.com.ar/historia.html" ><strong>Historia</strong></a></li>
+					<li class="submenu"><a href="#"><strong>Galeria</strong><span class="icon-down-open"></span></a>
+						<ul>
+							<li><a href="http://gasj.com.ar/galeria1.html">Galeria 1</a></li>
+							<li><a href="http://gasj.com.ar/galeria2.html">Galeria 2</a></li>
+							<li><a href="http://gasj.com.ar/galeria3.html">Galeria 3</a></li>
+							<li><a href="http://gasj.com.ar/galeria4.html">Galeria 4</a></li>
+						</ul>
+					</li>
+					<li><a href="http://gasj.com.ar/links.html"><strong>Links</strong></a></li>
+				</ul>
+			</nav>
+		</header>		
+
+		<div class="contenedor">
+			<nav>
+				<strong>Cronograma tentativo</strong>
+			</nav>
+
+			<div class="desktop">
+		    	<table>
+		    		<caption>Actividades en campamento</caption>				
+					<tr>
+						<td><button onclick="uno()"><strong>1/1</strong><br>Misa de despedida</button></td>
+						<td><button onclick="dos()"><strong>2/1</strong><br>Partida desde Buenos Aires</button></td>			
+						<td><button onclick="tres()"><strong>3/1</strong><br>Llegada a Bariloche</button></td>
+						<td><button onclick="cuatro()"><strong>4/1</strong><br>Primera caminata preparatoria</button></td>
+						<td><button onclick="cinco()"><strong>5/1</strong><br>Segunda caminata preparatoria</button></td>
+						<td><button onclick="seis()"><strong>6/1</strong><br>Salida al Cerro L&oacute;pez</button></td>			
+					</tr>
+
+					<tr>
+						<td><button onclick="siete()"><strong>7/1</strong><br>Ascenso y regreso</button></td>
+						<td><button onclick="ocho()"><strong>8/1</strong><br>Descanso</button></td>
+						<td><button onclick="nueve()"><strong>9/1</strong><br>Descanso</button></td>
+						<td><button onclick="diez()"><strong>10/1</strong><br>Salida a Lago Jakob</button></td>
+						<td><button onclick="once()"><strong>11/1</strong><br>Ascenso</button></td>
+						<td><button onclick="doce()"><strong>12/1</strong><br>Descenso</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="trece()"><strong>13/1</strong><br>Descanso</button></td>
+						<td><button onclick="catorce()"><strong>14/1</strong><br>Despedida</button></td>
+						<td><button onclick="quince()"><strong>15/1</strong><br>San Carlos de Bariloche</button></td>
+						<td><button onclick="dieciseis()"><strong>16/1</strong><br>Salida de regreso</button></td>
+						<td><button onclick="diecisiete()"><strong>17/1</strong><br>Llegada a Buenos Aires</button></td>
+						<td><button onclick="dieciocho()"><strong>18/1</strong><br>Misa de reencuentro</button></td>
+					</tr>
+
+				</table>
+			</div>	
+
+			<div class="tablet">
+				<table>
+					<caption>Actividades en campamento</caption>				
+					<tr>
+						<td><button onclick="uno()"><strong>1/1</strong><br>Misa de despedida</button></td>
+						
+						<td><button onclick="dos()"><strong>2/1</strong><br>Partida desde Buenos Aires</button></td>
+					</tr>
+					<tr>			
+						<td><button onclick="tres()"><strong>3/1</strong><br>Llegada a Bariloche</button></td>
+						
+						<td><button onclick="cuatro()"><strong>4/1</strong><br>Primera caminata preparatoria</button></td>
+					</tr>
+					<tr>	
+						<td><button onclick="cinco()"><strong>5/1</strong><br>Segunda caminata preparatoria</button></td>
+						
+						<td><button onclick="seis()"><strong>6/1</strong><br>Salida al Cerro L&oacute;pez</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="siete()"><strong>7/1</strong><br>Ascenso y regreso</button></td>				
+						
+						<td><button onclick="ocho()"><strong>8/1</strong><br>Descanso</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="nueve()"><strong>9/1</strong><br>Descanso</button></td>
+						
+						<td><button onclick="diez()"><strong>10/1</strong><br>Salida a Lago Jakob</button></td>			
+					</tr>
+					<tr>	
+						<td><button onclick="once()"><strong>11/1</strong><br>Ascenso</button></td>			
+						
+						<td><button onclick="doce()"><strong>12/1</strong><br>Descenso</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="trece()"><strong>13/1</strong><br>Descanso</button></td>				
+						
+						<td><button onclick="catorce()"><strong>14/1</strong><br>Despedida</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="quince()"><strong>15/1</strong><br>San Carlos de Bariloche</button></td>				
+						
+						<td><button onclick="dieciseis()"><strong>16/1</strong><br>Salida de regreso</button></td>			
+					</tr>
+					<tr>	
+						<td><button onclick="diecisiete()"><strong>17/1</strong><br>Llegada a Buenos Aires</button></td>				
+						
+						<td><button onclick="dieciocho()"><strong>18/1</strong><br>Misa de reencuentro</button></td>				
+					</tr>
+				</table>
+			</div>
+
+			<div class="mobile">
+				<table>
+					<caption>Actividades en campamento</caption>				
+					<tr>
+						<td><button onclick="uno()"><strong>1/1</strong><br>Misa de despedida</button></td>
+					</tr>
+					<tr>	
+						<td><button onclick="dos()"><strong>2/1</strong><br>Partida desde Buenos Aires</button></td>
+					</tr>
+					<tr>			
+						<td><button onclick="tres()"><strong>3/1</strong><br>Llegada a Bariloche</button></td>
+					</tr>
+					<tr>	
+						<td><button onclick="cuatro()"><strong>4/1</strong><br>Primera caminata preparatoria</button></td>
+					</tr>
+					<tr>	
+						<td><button onclick="cinco()"><strong>5/1</strong><br>Segunda caminata preparatoria</button></td>
+					</tr>
+					<tr>	
+						<td><button onclick="seis()"><strong>6/1</strong><br>Salida al Cerro L&oacute;pez</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="siete()"><strong>7/1</strong><br>Ascenso y regreso</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="ocho()"><strong>8/1</strong><br>Descanso</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="nueve()"><strong>9/1</strong><br>Descanso</button></td>
+					</tr>
+					<tr>	
+						<td><button onclick="diez()"><strong>10/1</strong><br>Salida a Lago Jakob</button></td>			
+					</tr>
+					<tr>	
+						<td><button onclick="once()"><strong>11/1</strong><br>Ascenso</button></td>			
+					</tr>
+					<tr>	
+						<td><button onclick="doce()"><strong>12/1</strong><br>Descenso</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="trece()"><strong>13/1</strong><br>Descanso</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="catorce()"><strong>14/1</strong><br>Despedida</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="quince()"><strong>15/1</strong><br>San Carlos de Bariloche</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="dieciseis()"><strong>16/1</strong><br>Salida de regreso</button></td>			
+					</tr>
+					<tr>	
+						<td><button onclick="diecisiete()"><strong>17/1</strong><br>Llegada a Buenos Aires</button></td>				
+					</tr>
+					<tr>	
+						<td><button onclick="dieciocho()"><strong>18/1</strong><br>Misa de reencuentro</button></td>				
+					</tr>
+				</table>
+			</div>
+
+			<div class="modal">
+				<div id="uno">
+					<h4>A las 19hs en la parroquia Santa Julia (Juan Bautista Alberdi 1195), se realizará una misa con los acampantes y sus familiares. Al finalizar tendremos una reunión para detallar y responder a las cuestiones de último momento previas al viaje.</h4>			
+					<a onclick="uno()" class="close">Salir</a>
+				</div>
+
+				<div id="dos">
+					<h4>La salida se realizará desde Retiro. El horario de encuentro será actualizado más cerca de la fecha de viaje y los pasajes serán repartidos por los egresados allí.</h4>			
+					<a onclick="dos()" class="close">Salir</a>
+				</div>
+
+				<div id="tres">
+					<h4>Llegada a la terminal de San Carlos de Bariloche y traslado a la localidad de Colonia Suiza (a 25 km de la ciudad). Allí nos instalaremos en el camping SAC.</h4>			
+					<a onclick="tres()" class="close">Salir</a>
+				</div>
+
+				<div id="cuatro">
+					<h4>Salida hacia la Cascada de la Virgen (3km desde el SAC). De regreso, merienda a orillas del Lago Moreno</h4>			
+					<a onclick="cuatro()" class="close">Salir</a>
+				</div>
+
+				<div id="cinco">
+					<h4>Salida hacia Punto Panorámico, una de las atracciones del Circuito Chico de Bariloche. Desde allí, se pueden observar los lagos Nahuel Huapi y Moreno, el Cerro López (entre otras cumbres de la cordillera) y el emblemático hotel Llao Llao. Es una caminata de 8km entre ida y vuelta desde el Camping SAC. </h4>			
+					<a onclick="cinco()" class="close">Salir</a>
+				</div>
+
+				<div id="seis">
+					<h4>Primera experiencia de montaña. Por la mañana, preparación para la travesía y luego del mediodía, ascenso hacia el Refugio López. Desde la base del cerro se caminan 11km y se ascienden 1600mts de desnivel para llegar al refugio. El tiempo estimado de caminata es de 3 a 5 horas. Se pernocta dentro del refugio.</h4>			
+					<a onclick="seis()" class="close">Salir</a>
+				</div>
+
+				<div id="siete">
+					<h4>Dependiendo de las condiciones climáticas del día y las indicaciones de los guías de montaña, se podrá realizar una subida desde el Refugio hacia una de las cumbres del Cerro, Pico Turista (2070 mts de altura), o regresar directamente al camping SAC luego del mediodía.</h4>			
+					<a onclick="siete()" class="close">Salir</a>
+				</div>
+
+				<div id="ocho">
+					<h4>Día de levantada libre y descanso en el SAC. Los chicos pueden aprovechar para disfrutar de la feria del poblado, del Lago Moreno y del Arroyo Goye.</h4>			
+					<a onclick="ocho()" class="close">Salir</a>
+				</div>
+
+				<div id="nueve">
+					<h4>Descanso en el SAC y preparaci&oacute;n de la traves&iacute;a a Lago Jakob.</h4>			
+					<a onclick="nueve()" class="close">Salir</a>
+				</div>
+
+				<div id="diez">
+					<h4>Se parte por la mañana temprano en una combi desde el SAC hacia la picada donde comienza la caminata. La misma es de 18 kilómetros (alrededor de 7 horas de duración), tomando en cuenta el almuerzo a la vera del arroyo Casa de Piedra. Se merienda y cena en las inmediaciones del refugio San Martín, a la orilla del Lago Jakob, y se pernocta en carpa en la zona de acampe del refugio.</h4>			
+					<a onclick="diez()" class="close">Salir</a>
+				</div>
+
+				<div id="once">
+					<h4>Luego de una caminata liviana de aproximadamente 1 hora, se llega a la Laguna de los Témpanos, donde se realiza el almuerzo. Se continúa la caminata hacia el paso Schweitzer (que dura también 1 hora). Luego de un merecido descanso en el paso, se inicia el retorno hacia el Lago Jakob y dormir otra vez en el área de acampe.</h4>			
+					<a onclick="once()" class="close">Salir</a>
+				</div>
+
+				<div id="doce">
+					<h4>Se inicia la marcha en la mañana desde el refugio, y luego de 8 horas de caminata se retorna al SAC.</h4>			
+					<a onclick="doce()" class="close">Salir</a>
+				</div>
+
+				<div id="trece">
+					<h4>Día de descanso luego de la travesía al Cerro Jakob, con tiempo para visitar Colonia Suiza y el Lago Moreno.</h4>			
+					<a onclick="trece()" class="close">Salir</a>
+				</div>
+
+				<div id="catorce">
+					<h4>Asado junto a todos los integrantes del campamento y a los guías que nos acompañaron durante la travesía. Una misa y una cena de cierre para compartir entre todos. </h4>			
+					<a onclick="catorce()" class="close">Salir</a>
+				</div>
+
+				<div id="quince"> 
+					<h4>A media mañana se realiza la visita a la ciudad de San Carlos de Bariloche. Allí, tienen un tiempo libre para almorzar en donde quieran juntos a sus delegados y compañeros y conocer el Centro Cívico y la ciudad. Luego del mediodía, se retorna al SAC para tener la evaluación final de la experiencia y la puesta en común de la misma.</h4>			
+					<a onclick="quince()" class="close">Salir</a>
+				</div>
+
+				<div id="dieciseis">
+					<h4>Desarme del campamento y salida desde el SAC hacia la terminal de ómnibus de Bariloche, para de allí comenzar el retorno a Buenos Aires.</h4>			
+					<a onclick="dieciseis()" class="close">Salir</a>
+				</div>
+
+				<div id="diecisiete">
+					<h4>El micro llegará a la terminal de Retiro y el horario será especificado en cuanto se sepa. </h4>			
+					<a onclick="diecisiete()" class="close">Salir</a>
+				</div>
+
+				<div id="dieciocho">
+					<h4>Misa en la parroquia Santa Julia para acampantes y sus familias y posterior cena de reencuentro en la pizzería La Continental.</h4>			
+					<a onclick="dieciocho()" class="close">Salir</a>
+				</div>
+			</div>
+
+			<footer>
+				<p>Visitanos en Instagram&nbsp;<a href="https://instagram.com/grupoandino.sj?igshid=nvo5jfefexya"><span class="icon-instagram"></span></a></p>
+			</footer>	
+			
+		</div>
+
+		<script src="js/calendario.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
+</html>	
