@@ -1,4 +1,4 @@
-var boxArray = ['uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','once','doce','trece','catorce','quince','dieciseis','diecisiete','dieciocho'];
+var boxArray = ['uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','once','doce','trece','catorce','quince','dieciseis','diecisiete'];
 window.addEventListener('mouseup', function(event){
 	for(var i=0; i < boxArray.length; i++){
 	    var box = document.getElementById(boxArray[i]);
@@ -175,16 +175,6 @@ function diecisiete() {
 		c=1;
 	}else{
 		document.getElementById("diecisiete").style.display="none";
-		c=0;
-	}
-}
-
-function dieciocho() {
-	if(c==0){
-		document.getElementById("dieciocho").style.display="block";
-		c=1;
-	}else{
-		document.getElementById("dieciocho").style.display="none";
 		c=0;
 	}
 }
