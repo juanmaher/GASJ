@@ -1,5 +1,5 @@
 function changeText1(){
-	document.getElementById('noticias').innerHTML = 'La próxima reunión informativa para padres y futuros acampantes será el jueves 23 a las 20hs en el salón de actos del colegio.';
+	document.getElementById('noticias').innerHTML = 'La próxima reunión informativa para padres y futuros acampantes será informada próximamente. Esta información puede resultarte de interés.';
 }
 	
 function changeText2(){
