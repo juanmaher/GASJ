@@ -1,164 +1,273 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="shortcut icon" href="imagenes/gasj_favicon.ico">
-		<title>GASJ</title>
-		<link rel="stylesheet" type="text/css" href="css/style_home.css">
-		<link rel="stylesheet" type="text/css" href="css/style_menu.css">
-		<link rel="stylesheet" type="text/css" href="css/icon-menu.css">
-		<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
-		<link type="text/css" rel="stylesheet" href="css/lightbox.css">
-		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163103728-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+  <head>
+    <link rel="shortcut icon" href="imagenes/gasj_favicon.ico" />
+    <title>GASJ</title>
+    <link rel="stylesheet" type="text/css" href="css/style_home.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/icon-menu.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightbox.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightbox.css" />
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163103728-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-          gtag('config', 'UA-163103728-1');
-        </script>
+      gtag('config', 'UA-163103728-1');
+    </script>
 
-		<!-- Force to do not read the cache memory -->
-		<meta http-equiv="Expires" content="0">
-		<meta http-equiv="Last-Modified" content="0">
-		<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-		<meta http-equiv="Pragma" content="no-cache">
+    <!-- Force to do not read the cache memory -->
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Last-Modified" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+  </head>
 
-	</head>
+  <body
+    style="
+      background-image: url('images/DSC_0060.JPG');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      color: #262328;
+      background-attachment: fixed;
+    "
+  >
+    <header>
+      <input type="checkbox" id="btn-menu" />
+      <img src="images/logo_gasj.png" />
+      <label for="btn-menu" class="icon-menu"></label>
 
-	<body style="background-image: url('images/DSC_0060.JPG');background-position: center center;background-size: cover;background-repeat: no-repeat;height: 100%; color:#262328; background-attachment: fixed;">
-		<header>
-			<input type="checkbox" id="btn-menu">
-			<img src="images/logo_gasj.png">
-			<label for="btn-menu" class="icon-menu"></label>
-			
-			<nav class="menu">
-				<ul>
-					<li><a href="http://gasj.com.ar/home.html"><strong>Inicio</strong></a></li>
-					<li><a href="http://gasj.com.ar/cronograma.html"><strong>Cronograma</strong></a></li>
-					<li class="submenu"><a href="#"><strong>Equipo para acampar</strong><span class="icon-down-open"></span></a>
-						<ul>
-							<li><a href="http://gasj.com.ar/equipo1.html">Ropa</a></li>
-							<li><a href="http://gasj.com.ar/equipo2.html">Dormir</a></li>
-							<li><a href="http://gasj.com.ar/equipo3.html">Comer e higiene</a></li>
-							<li><a href="http://gasj.com.ar/equipo4.html">Equipaje y varios</a></li>
-						</ul>
-					</li>			
-					<li><a href="http://gasj.com.ar/historia.html" ><strong>Historia</strong></a></li>
-					<li class="submenu"><a href="#"><strong>Galeria</strong><span class="icon-down-open"></span></a>
-						<ul>
-							<li><a href="http://gasj.com.ar/galeria1.html">Galeria 1</a></li>
-							<li><a href="http://gasj.com.ar/galeria2.html">Galeria 2</a></li>
-							<li><a href="http://gasj.com.ar/galeria3.html">Galeria 3</a></li>
-							<!-- <li><a href="http://gasj.com.ar/galeria4.html">Galeria 4</a></li> -->
-						</ul>
-					</li>
-					<li><a href="http://gasj.com.ar/links.html"><strong>Links</strong></a></li>
-				</ul>
-			</nav>
-		</header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="http://gasj.com.ar/home.html"><strong>Inicio</strong></a>
+          </li>
+          <li>
+            <a href="http://gasj.com.ar/cronograma.html"><strong>Cronograma</strong></a>
+          </li>
+          <li class="submenu">
+            <a href="#"><strong>Equipo para acampar</strong><span class="icon-down-open"></span></a>
+            <ul>
+              <li><a href="http://gasj.com.ar/equipo1.html">Ropa</a></li>
+              <li><a href="http://gasj.com.ar/equipo2.html">Dormir</a></li>
+              <li><a href="http://gasj.com.ar/equipo3.html">Comer e higiene</a></li>
+              <li><a href="http://gasj.com.ar/equipo4.html">Equipaje y varios</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://gasj.com.ar/historia.html"><strong>Historia</strong></a>
+          </li>
+          <li class="submenu">
+            <a href="#"><strong>Galeria</strong><span class="icon-down-open"></span></a>
+            <ul>
+              <li><a href="http://gasj.com.ar/galeria1.html">Galeria 1</a></li>
+              <li><a href="http://gasj.com.ar/galeria2.html">Galeria 2</a></li>
+              <li><a href="http://gasj.com.ar/galeria3.html">Galeria 3</a></li>
+              <!-- <li><a href="http://gasj.com.ar/galeria4.html">Galeria 4</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="http://gasj.com.ar/links.html"><strong>Links</strong></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-		<div class="nombre">
-			<div class="titulos">
-				<p class="siglas">GASJ</p>			
-				<p class="completo">Grupo Andino Santa Julia</p>			
-				<p class="frase"><em>Escuela de vida</em></p>
-			</div>
-		</div>
+    <div class="nombre">
+      <div class="titulos">
+        <p class="siglas">GASJ</p>
+        <p class="completo">Grupo Andino Santa Julia</p>
+        <p class="frase"><em>Escuela de vida</em></p>
+      </div>
+    </div>
 
-		<section class="contenedor">
-			<div class="pregunta">
-				<button class="boton" onclick="slideOpen1('respuesta')"><h2>¿Qué es el GASJ?</h2></button><br>
-			</div>
-			
-			<div id="respuesta">
-				<p >El Grupo Andino Santa Julia <strong>(GASJ)</strong> tiene como objetivo la realizaci&oacute;n de campamentos educativos principalmente para los alumnos del Instituto Social Militar Dr. D&aacute;maso Centeno (ISMDDC), pero tambi&eacute;n para cualquiera que desee sumarse. Los campamentos del <strong>GASJ</strong> forman parte de la planificaci&oacute;n pastoral de Servicio Religioso del D&aacute;maso Centeno.  El nombre de &quot;Grupo Andino&quot; se&ntilde;ala que se privilegia a la monta&ntilde;a como escenario natural de esa experiencia educativa.<br></p>
-			</div>
-			
+    <section class="contenedor">
+      <div class="pregunta">
+        <button class="boton" onclick="slideOpen1('respuesta')"><h2>¿Qué es el GASJ?</h2></button
+        ><br />
+      </div>
 
-			<div class="video_escritorio">
-				<iframe src="https://www.youtube.com/embed/kEpxTUoF3Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
-			</div>
+      <div id="respuesta">
+        <p>
+          El Grupo Andino Santa Julia <strong>(GASJ)</strong> tiene como objetivo la
+          realizaci&oacute;n de campamentos educativos principalmente para los alumnos del Instituto
+          Social Militar Dr. D&aacute;maso Centeno (ISMDDC), pero tambi&eacute;n para cualquiera que
+          desee sumarse. Los campamentos del <strong>GASJ</strong> forman parte de la
+          planificaci&oacute;n pastoral de Servicio Religioso del D&aacute;maso Centeno. El nombre
+          de &quot;Grupo Andino&quot; se&ntilde;ala que se privilegia a la monta&ntilde;a como
+          escenario natural de esa experiencia educativa.<br />
+        </p>
+      </div>
 
-			<hr class="barra_celular">
-			<h2>Novedades</h2>
-			
-			<div class="cuadroOpciones">
-				<div class="opciones">
-					<a href="files/kit_reunion_de_padres_v2022.pdf" download="kit_reunion_de_padres_v2022.pdf"><button class="boton" onclick='changeText1()'>Reunión informativa</button></a><br>
-					<a href="files/autorizacion_gasj77.pdf" download="autorizacion_gasj77.pdf"><button class="boton" onclick='changeText2()'>Autorización</button></a><br>
-					<a href="files/ficha_medica_v2022.pdf" download="ficha_medica_v2022.pdf"><button class="boton" onclick='changeText3()'>Ficha médica</button></a><br>
-					<button class="boton" onclick='changeText4()'>Buzos</button><br>
-					<button class="boton" onclick='changeText5()'>Cronograma</button>
-				</div>
-			</div>
-				
-			<div class="cuadroTexto">
-				<p id= "noticias"></p>
-			</div>
+      <div class="video_escritorio">
+        <iframe
+          src="https://www.youtube.com/embed/kEpxTUoF3Fo"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          align="center"
+        ></iframe>
+      </div>
 
-			<hr>
-			<h2>Traves&iacute;as actuales</h2>
+      <hr class="barra_celular" />
+      <h2>Novedades</h2>
 
-			<div class="travesias">
+      <div class="cuadroOpciones">
+        <div class="opciones">
+          <a href="files/kit_reunion_de_padres.pdf" download="Kit reunion de padres - GASJ 78"
+            ><button class="boton" onclick="changeText1()">Reunión informativa</button></a
+          ><br />
+          <a href="files/autorizacion.pdf" download="Autorizacion GASJ 78"
+            ><button class="boton" onclick="changeText2()">Autorización</button></a
+          ><br />
+          <a href="files/ficha_medica.pdf" download="Ficha medica - GASJ 78.pdf"
+            ><button class="boton" onclick="changeText3()">Ficha médica</button></a
+          ><br />
+          <a href="files/costos_y_plazos.pdf" download="Costos y plazos - GASJ 78.pdf"
+            ><button class="boton" onclick="changeText5()">Costos y plazos</button></a
+          >
+          <button class="boton" onclick="changeText4()">Buzos</button><br />
+        </div>
+      </div>
 
-				<button class="boton" onclick="slideOpen1('lopez');"><img src="images/imagen28.jpg" class="foto_lopez" alt="Refugio L&oacute;pez"><h2>Refugio López-Pico Turista</h2></button>
+      <div class="cuadroTexto">
+        <p id="noticias"></p>
+      </div>
 
+      <hr />
+      <h2>Traves&iacute;as actuales</h2>
 
-				<div id="lopez">
-					<p>&nbsp;&nbsp;&nbsp;El refugio L&oacute;pez, se ubica a 1600 msnm, sobre la ladera Norte del Cerro Vicente López y Planes. Antiguamente perteneció a la familia del guía de montaña Carlos Sonntag y también al Club Andino Bariloche. En la actualidad es propiedad de la empresa Olympus, y durante los últimos años se caracterizó por una muy buena atención y una excelente gastronomía.<br>&nbsp;&nbsp;&nbsp;Es el refugio más grande y confortable de todos, y ello es posible ya que se puede llegar hasta sus inmediaciones con vehículos 4x4, lo cual facilita el traslado de mercaderías y provisiones.<br>&nbsp;&nbsp;&nbsp;El principal acceso al refugio comienza en la ruta del Circuito Chico. La picada empieza sobre un camino de autos con una leve pendiente. A medida que se va ascendiendo se abandona dicho camino para internarse en una picada de montaña, propiamente dicha, que a su vez aumenta su pendiente. A la hora de marcha aproximadamente, se pasa por las inmedianciones del refugio-restaurante Roca Negra.<br>&nbsp;&nbsp;&nbsp;La picada continúa escurriendose por un bosque alto. A las dos horas de marcha se vuelve a continuar por el camino vehicular hasta el cruce con el arroyo López, siguiendo por un sendero que se angosta hasta llegar al refugio. La caminata no debería demandar más de tres horas o tres horas y media.<br>&nbsp;&nbsp;&nbsp;La travesía concluye en el llamado Pico Turista (2050 msnm) del cerro, para llegar a este se asciende por un sendero rocoso en primer lugar hasta La Hoya (1850 msnm) y luego se sigue en dirección al Pico.</p>
-				</div>
+      <div class="travesias">
+        <button class="boton" onclick="slideOpen1('lopez');">
+          <img src="images/imagen28.jpg" class="foto_lopez" alt="Refugio L&oacute;pez" />
+          <h2>Refugio López-Pico Turista</h2>
+        </button>
 
-				<button class="boton" onclick="slideOpen2('jakob');"><img src="images/foto_jakob.jpg" class="foto_jakob" alt="Lago Jakob"><h2>Lago Jakob-Laguna de Los Témpanos</h2></button>
+        <div id="lopez">
+          <p>
+            &nbsp;&nbsp;&nbsp;El refugio L&oacute;pez, se ubica a 1600 msnm, sobre la ladera Norte
+            del Cerro Vicente López y Planes. Antiguamente perteneció a la familia del guía de
+            montaña Carlos Sonntag y también al Club Andino Bariloche. En la actualidad es propiedad
+            de la empresa Olympus, y durante los últimos años se caracterizó por una muy buena
+            atención y una excelente gastronomía.<br />&nbsp;&nbsp;&nbsp;Es el refugio más grande y
+            confortable de todos, y ello es posible ya que se puede llegar hasta sus inmediaciones
+            con vehículos 4x4, lo cual facilita el traslado de mercaderías y provisiones.<br />&nbsp;&nbsp;&nbsp;El
+            principal acceso al refugio comienza en la ruta del Circuito Chico. La picada empieza
+            sobre un camino de autos con una leve pendiente. A medida que se va ascendiendo se
+            abandona dicho camino para internarse en una picada de montaña, propiamente dicha, que a
+            su vez aumenta su pendiente. A la hora de marcha aproximadamente, se pasa por las
+            inmedianciones del refugio-restaurante Roca Negra.<br />&nbsp;&nbsp;&nbsp;La picada
+            continúa escurriendose por un bosque alto. A las dos horas de marcha se vuelve a
+            continuar por el camino vehicular hasta el cruce con el arroyo López, siguiendo por un
+            sendero que se angosta hasta llegar al refugio. La caminata no debería demandar más de
+            tres horas o tres horas y media.<br />&nbsp;&nbsp;&nbsp;La travesía concluye en el
+            llamado Pico Turista (2050 msnm) del cerro, para llegar a este se asciende por un
+            sendero rocoso en primer lugar hasta La Hoya (1850 msnm) y luego se sigue en dirección
+            al Pico.
+          </p>
+        </div>
 
-				<div id="jakob">
-					<p>&nbsp;&nbsp;&nbsp;El camino más habitual para acceder al Lago Jakob y Refugio San Martín, se inicia en la picada sobre la Ruta 252 a un kilómetro del puente sobre el Arroyo Casa de Piedra y demanda en promedio unas seis horas. En su primer tramo es un camino que permite el tránsito de automóviles, que luego de pasar por el lugar conocido como "El tambo", se angosta y se pliega sobre el curso del arroyo Casa de Piedra en una senda que no presenta dificultades ni pendientes. Luego de la confluencia con el arroyo Rucaco, se continúa bordeando su margen hasta el fondo del valle, donde al superar el bosque, comienza un ascenso pronunciado hasta llegar a las proximidades del Refugio San Martín, a 1600 msnm.<br>&nbsp;&nbsp;&nbsp;Este refugio es más conocido como "Refugio Jakob", en referencia al lago que se encuentra en sus inmediaciones. Fue construido en 1952 a base de piedra y madera, y en la década del 80 se realizó una ampliación. Cuenta con un comedor, cocina y dependencias, y dos dormitorios. En el exterior a unos 100 m se encuentran los sanitarios.<br>&nbsp;&nbsp;&nbsp;Para seguir asombrándose y recorrer, a solo media hora de caminata, se encuentra la bellísima laguna Los Témpanos, que dependiendo de las nevadas invernales presenta bloques transparentes de hielo flotante que pueden verse durante los primeros meses del verano.</p>
-				</div>				
-			</div>			
+        <button class="boton" onclick="slideOpen2('jakob');">
+          <img src="images/foto_jakob.jpg" class="foto_jakob" alt="Lago Jakob" />
+          <h2>Lago Jakob-Laguna de Los Témpanos</h2>
+        </button>
 
-			<hr>
-			<h2>Ubicaci&oacute;n del Camping SAC</h2>
+        <div id="jakob">
+          <p>
+            &nbsp;&nbsp;&nbsp;El camino más habitual para acceder al Lago Jakob y Refugio San
+            Martín, se inicia en la picada sobre la Ruta 252 a un kilómetro del puente sobre el
+            Arroyo Casa de Piedra y demanda en promedio unas seis horas. En su primer tramo es un
+            camino que permite el tránsito de automóviles, que luego de pasar por el lugar conocido
+            como "El tambo", se angosta y se pliega sobre el curso del arroyo Casa de Piedra en una
+            senda que no presenta dificultades ni pendientes. Luego de la confluencia con el arroyo
+            Rucaco, se continúa bordeando su margen hasta el fondo del valle, donde al superar el
+            bosque, comienza un ascenso pronunciado hasta llegar a las proximidades del Refugio San
+            Martín, a 1600 msnm.<br />&nbsp;&nbsp;&nbsp;Este refugio es más conocido como "Refugio
+            Jakob", en referencia al lago que se encuentra en sus inmediaciones. Fue construido en
+            1952 a base de piedra y madera, y en la década del 80 se realizó una ampliación. Cuenta
+            con un comedor, cocina y dependencias, y dos dormitorios. En el exterior a unos 100 m se
+            encuentran los sanitarios.<br />&nbsp;&nbsp;&nbsp;Para seguir asombrándose y recorrer, a
+            solo media hora de caminata, se encuentra la bellísima laguna Los Témpanos, que
+            dependiendo de las nevadas invernales presenta bloques transparentes de hielo flotante
+            que pueden verse durante los primeros meses del verano.
+          </p>
+        </div>
+      </div>
 
-			<div class="mapa">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10113.612235557732!2d-71.52658152793396!3d-41.09532754878498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a745963e35b97%3A0x8b395a5af93d8235!2sCAMPING%20SAC%20-%20Campamento%20SAC%20Bariloche!5e0!3m2!1ses-419!2sar!4v1587515459604!5m2!1ses-419!2sar" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			</div>
+      <hr />
+      <h2>Ubicaci&oacute;n del Camping SAC</h2>
 
-			<hr class="barra_video">
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10113.612235557732!2d-71.52658152793396!3d-41.09532754878498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a745963e35b97%3A0x8b395a5af93d8235!2sCAMPING%20SAC%20-%20Campamento%20SAC%20Bariloche!5e0!3m2!1ses-419!2sar!4v1587515459604!5m2!1ses-419!2sar"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
 
-			<div class="video_celular">
-				<iframe src="https://www.youtube.com/embed/kEpxTUoF3Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
-			</div>
+      <hr class="barra_video" />
 
-		</section> 
+      <div class="video_celular">
+        <iframe
+          src="https://www.youtube.com/embed/kEpxTUoF3Fo"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          align="center"
+        ></iframe>
+      </div>
+    </section>
 
-		<footer>
-			<div class="recuadro">
-				<div class="izquierda">
-					<h3>Contacto</h3>
-					<p>Estamos en Capellanía del Dámaso Centeno para atender cualquier consulta.</p>
+    <footer>
+      <div class="recuadro">
+        <div class="izquierda">
+          <h3>Contacto</h3>
+          <p>Estamos en Capellanía del Dámaso Centeno para atender cualquier consulta.</p>
 
-					<h3>Acerca de</h3>
-					<p>Hemos constuido este sitio para informar sobre lo que se hace en esta actividad y acercar a cualquiera que quiera rememorar. Si le gusta la página o si tiene una sugerencia, <a href="mailto:jmhernandez1440@gmail.com">envíenos un correo electrónico</a>; los comentarios son muy importantes y siempre bienvenidos!</p>
-				</div>
+          <h3>Acerca de</h3>
+          <p>
+            Hemos constuido este sitio para informar sobre lo que se hace en esta actividad y
+            acercar a cualquiera que quiera rememorar. Si le gusta la página o si tiene una
+            sugerencia,
+            <a href="mailto:jmhernandez1440@gmail.com">envíenos un correo electrónico</a>; los
+            comentarios son muy importantes y siempre bienvenidos!
+          </p>
+        </div>
 
-				<div class="derecha">
-					<h3>Redes sociales</h3>
-					<p><a href="https://instagram.com/grupoandino.sj?igshid=nvo5jfefexya"><span class="icon-instagram"></span></a>&nbsp;grupoandino.sj</p>
-					
-					<h3>Diseñada por</h3>
-					<p>Juan Manuel Hernández y colaboradores.</p>
-				</div>
-			</div>
-		</footer>
+        <div class="derecha">
+          <h3>Redes sociales</h3>
+          <p>
+            <a href="https://instagram.com/grupoandino.sj?igshid=nvo5jfefexya"
+              ><span class="icon-instagram"></span></a
+            >&nbsp;grupoandino.sj
+          </p>
 
-		<script src="js/home.js"></script>
-		<script src="js/menu.js"></script>
-		<script src="js/lightbox-plus-jquery.min.js"></script>
-		<script src="js/lightbox.js"></script>
-	</body>
-</html>	
+          <h3>Diseñada por</h3>
+          <p>Juan Manuel Hernández y colaboradores.</p>
+        </div>
+      </div>
+    </footer>
 
-
+    <script src="js/home.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>
